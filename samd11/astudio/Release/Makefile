@@ -124,7 +124,7 @@ LINKER_SCRIPT_DEP+=
 ./%.o: ../../%.c
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -mthumb -D__SAMD11D14AM__ -D__SAMD11D14AM__ -DDONT_USE_CMSIS_INIT -DF_CPU=8000000  -I"../../include" -I"../.."  -O0 -ffunction-sections -fdata-sections -g3 -Wall -mcpu=cortex-m0plus -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -mthumb -D__SAMD11D14AM__ -D__SAMD11D14AM__ -DDONT_USE_CMSIS_INIT -DF_CPU=48000000  -I"../../include" -I"../.."  -O0 -ffunction-sections -fdata-sections -g3 -Wall -mcpu=cortex-m0plus -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 

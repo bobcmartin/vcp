@@ -83,7 +83,7 @@
     <ListValues>
       <Value>__SAMD11D14AM__</Value>
       <Value>DONT_USE_CMSIS_INIT</Value>
-      <Value>F_CPU=8000000</Value>
+      <Value>F_CPU=48000000</Value>
     </ListValues>
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
