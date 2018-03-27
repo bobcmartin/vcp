@@ -45,7 +45,7 @@ static void usb_cdc_ep_recv_callback(int size);
 /*- Variables ---------------------------------------------------------------*/
 static usb_cdc_line_coding_t usb_cdc_line_coding =
 {
-  .dwDTERate   = 115200,
+  .dwDTERate   = 57600,				//57600 for Arduino Pro / Nano
   .bCharFormat = USB_CDC_1_STOP_BIT,
   .bParityType = USB_CDC_NO_PARITY,
   .bDataBits   = USB_CDC_8_DATA_BITS,

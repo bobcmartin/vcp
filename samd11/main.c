@@ -44,10 +44,10 @@
 
 // NOTE: Set both rising and falling edge times to 0 to disable edge detection.
 HAL_GPIO_PIN(STATUS,           A, 9);
-#define STATUS_INACTIVE_STATE  0 // 0 - Low, 1 - High, 2 - Hi-Z
-#define STATUS_ACTIVE_STATE    1 // 0 - Low, 1 - High, 2 - Hi-Z
-#define STATUS_RISING_EDGE     0 // ms
-#define STATUS_FALLING_EDGE    0 // ms
+#define STATUS_INACTIVE_STATE  1 // 0 - Low, 1 - High, 2 - Hi-Z
+#define STATUS_ACTIVE_STATE    0 // 0 - Low, 1 - High, 2 - Hi-Z
+#define STATUS_RISING_EDGE     20 // ms
+#define STATUS_FALLING_EDGE    20 // ms
 
 /*- Variables ---------------------------------------------------------------*/
 static alignas(4) uint8_t app_recv_buffer[USB_BUFFER_SIZE];
